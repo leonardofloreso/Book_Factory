@@ -30,28 +30,28 @@ Internally, the controller separates planning and writing stages to preserve cla
 
 ## Core Components
 
-- PipelineController
+- PipelineController:
     Orchestrates execution, manages run directory, coordinates stages.
 
-- OutlinePlannerAgent
+- OutlinePlannerAgent:
     Generates a structured outline from the validated book input.
 
-- ChapterWriterAgent
+- ChapterWriterAgent:
     Generates structured chapter JSON objects using deterministic logic.
 
-- SchemaValidator
+- SchemaValidator:
     Validates input, outline, and chapter structures against JSON schemas.
 
-- Format Guard
+- Format Guard:
     Ensures paragraphs respect formatting constraints and forbidden tokens.
 
-- Markdown Renderer
+- Markdown Renderer:
     Converts structured chapter JSON into markdown format.
 
-- Book Assembler
+- Book Assembler:
     Combines chapter markdown files into a full book.
 
-- Manifest Builder
+- Manifest Builder:
     Creates metadata describing the run for traceability.
 
 
