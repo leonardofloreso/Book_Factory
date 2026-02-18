@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "InputBook",
+  "type": "object",
+  "required": [
+    "book_id",
+    "title",
+    "topic",
+    "content_brief",
+    "target_audience",
+    "book_type",
+    "tone_profile",
+    "chapter_count",
+    "constraints"
+  ],
+  "properties": {
+    "book_id": { "type": "string", "minLength": 3 },
+    "title": { "type": "string", "minLength": 3 },
+    "topic": { "type": "string", "minLength": 1 },
+    "content_brief": { "type": "string", "minLength": 1 },
+    "target_audience": { "type": "string", "minLength": 1 },
+    "book_type": { "type": "string", "enum": ["bedtime", "educational", "entertaining"] },
+    "tone_profile": { "type": "string", "enum": ["bedtime", "educational", "entertaining"] },
+    "chapter_count": { "type": "integer", "minimum": 1, "maximum": 20 },
+    "constraints": {
+      "type": "object",
+      "required": ["strict_json_only", "no_markdown_separators", "no_bullets", "forbidden_tokens"],
+      "properties": {
+        "strict_json_only": { "type": "boolean" },
+        "no_markdown_separators": { "type": "boolean" },
+        "no_bullets": { "type": "boolean" },
+        "forbidden_tokens": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+      }
+    },
+    "outline_override_path": { "type": ["string", "null"] }
+  }
+}

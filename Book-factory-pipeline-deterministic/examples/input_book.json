@@ -1,0 +1,17 @@
+{
+  "book_id": "egypt_entertain_v1",
+  "title": "Three Entertaining Tales from Ancient Egypt",
+  "topic": "Ancient Egypt",
+  "content_brief": "Write three light, story-driven tales set in Ancient Egypt. Keep it accessible, vivid, and playful, with cultural details (scribes, markets, boats on the Nile, temples) but no academic tone. Each chapter should feel distinct with a clear beginning, middle, and end.",
+  "target_audience": "Adults who enjoy light historical storytelling",
+  "book_type": "entertaining",
+  "tone_profile": "entertaining",
+  "chapter_count": 3,
+  "constraints": {
+    "strict_json_only": true,
+    "no_markdown_separators": true,
+    "no_bullets": true,
+    "forbidden_tokens": ["---", "*", "- ", "•"]
+  },
+  "outline_override_path": null
+}
