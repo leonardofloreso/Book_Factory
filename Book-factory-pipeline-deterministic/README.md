@@ -104,7 +104,7 @@ outputs/<book_id>_<timestamp>/
     - chapters/
         - ch1.json
         - ch1.md
-        - ch2.jsonc
+        - ch2.json
         - ch2.md
     ...
     - book_full.md
