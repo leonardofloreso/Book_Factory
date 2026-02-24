@@ -139,25 +139,37 @@ The system prints the path of the generated run directory.
     Schema validation and formatting guards prevent malformed content from propagating downstream.
 
 
-## Scope and Limitations
+## What Is Intentionally Not Included
 
-This version is deterministic. It does not:
+This pipeline deliberately avoids several capabilities in order to preserve determinism and structural clarity.
 
-    - Call external language models
-    - Learn from previous runs
-    - Perform semantic reasoning
-    - Adapt dynamically beyond rule-based variation
-    - The focus is structural integrity and system design, not creative generation depth.
+The system does not:
 
+    - Perform semantic reasoning or contextual inference
+    - Maintain cross-chapter narrative memory
+    - Adapt dynamically based on prior outputs
+    - Use stochastic or probabilistic generation
+    - Call external language models or APIs
+    - Optimize for literary depth or creative richness
 
-## Future Direction
+The objective is structural integrity and reproducibility rather than expressive variation.
 
-Potential future extensions include:
+## Architectural Tradeoffs
 
-    - Optional LLM-backed generation layer
-    - Hybrid deterministic + generative mode
-    - Cross-chapter state memory
-    - Human-in-the-loop editing interface
-    - Pluggable content engines
+The design prioritizes determinism and contract enforcement over generative flexibility.
 
-The current architecture allows these features to be added without restructuring the pipeline.
+Key tradeoffs include:
+
+    - Consistency over creativity
+    - Validation strictness over format flexibility
+    - Predictable structure over narrative complexity
+    - Simplicity of execution over adaptive intelligence
+    - Local reproducibility over external model dependency
+
+These decisions allow:
+    - Stable and testable outputs
+    - Clear schema validation boundaries
+    - Deterministic artifact generation
+    - Safe execution in controlled environments
+
+The architecture is intentionally structured to allow a future LLM-backed engine to be integrated without refactoring orchestration logic.
