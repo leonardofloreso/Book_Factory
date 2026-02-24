@@ -1,0 +1,40 @@
+{
+  "book_id": "egypt_entertain_v1",
+  "title": "Three Entertaining Tales from Ancient Egypt",
+  "tone_profile": "entertaining",
+  "chapters": [
+    {
+      "chapter_id": "ch1",
+      "title": "Ancient Egypt: Tale 1",
+      "objective": "Tell a distinct entertaining story set on a small boat drifting between villages, driven by an unexpected visitor with a simple request.",
+      "key_points": [
+        "Keep tone: entertaining.",
+        "Use vivid, accessible details about Ancient Egypt.",
+        "Clear beginning, middle, and end.",
+        "No bullets, no separators, plain paragraphs."
+      ]
+    },
+    {
+      "chapter_id": "ch2",
+      "title": "Ancient Egypt: Tale 2",
+      "objective": "Tell a distinct entertaining story set on a small boat drifting between villages, driven by a missing object that matters more than it seems.",
+      "key_points": [
+        "Keep tone: entertaining.",
+        "Use vivid, accessible details about Ancient Egypt.",
+        "Clear beginning, middle, and end.",
+        "No bullets, no separators, plain paragraphs."
+      ]
+    },
+    {
+      "chapter_id": "ch3",
+      "title": "Ancient Egypt: Tale 3",
+      "objective": "Tell a distinct entertaining story set inside a temple courtyard at dusk, driven by a small misunderstanding that becomes a clever opportunity.",
+      "key_points": [
+        "Keep tone: entertaining.",
+        "Use vivid, accessible details about Ancient Egypt.",
+        "Clear beginning, middle, and end.",
+        "No bullets, no separators, plain paragraphs."
+      ]
+    }
+  ]
+}
